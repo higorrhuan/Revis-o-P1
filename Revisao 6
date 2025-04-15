@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+
+double soma1, soma2;
+double ovo;
+
+printf("Digite quantos ovos voce quer : ");
+scanf("%lf", &ovo);
+
+if(ovo >= 12){
+    soma1 = ovo * 0.30;
+    printf("Valor: R$%.2lf",soma1);
+}else{
+    soma2 = ovo * 0.35;
+    printf("Valor: R$%.2lf",soma2);
+}
+
+
+}
