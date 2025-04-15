@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    double x, y, z;
+
+    printf("Digite o valor dos 3 lados:\n");
+    scanf("%lf %lf %lf", &x, &y, &z);
+
+    // Verifica se os lados podem formar um triângulo
+    if (x + y > z && x + z > y && y + z > x) {
+        if (x == y && y == z) {
+            printf("Triângulo Equilátero\n");
+        } else if (x == y || x == z || y == z) {
+            printf("Triângulo Isósceles\n");
+        } else {
+            printf("Triângulo Escaleno\n");
+        }
+    } else {
+        printf("Os valores não formam um triângulo.\n");
+    }
+
+    return 0;
+}
