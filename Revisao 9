@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    double S = 0.0; // S será a soma dos termos
+
+    printf("Digite um número inteiro positivo: ");
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        printf("Por favor, insira um número inteiro positivo.\n");
+    } else {
+        printf("S = ");
+
+        for (i = 1; i <= n; i++) {
+            S += 1.0 / i; // Soma 1/i em cada passo
+
+            printf("1/%d", i); // Mostra o termo
+            if (i < n) {
+                printf(" + "); // Adiciona "+" se não for o último
+            }
+        }
+
+        printf(" = %.4lf\n", S); // Mostra com 4 casas decimais
+    }
+
+    return 0;
+}
