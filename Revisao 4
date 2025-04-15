@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+
+double x,y;
+double i;
+double raiz;
+double a,b;
+
+for(i=0; i<1; i++){
+    printf("Digite os numeros do P1:\n");
+    scanf("%lf %lf", &x, &y);
+}
+for(i=0; i<1; i++){
+    printf("Digite os numeros do P2: \n");
+    scanf("%lf %lf", &a, &b);
+}
+
+raiz = sqrt(pow(x-a,2)+ pow(y-b,2));
+
+printf("A Distancia e : %.4lf", raiz);
+
+
+}
+
